@@ -2,7 +2,11 @@
 import websockets
 import asyncio
 import logging
-logging.basicConfig(filename='log.log', level=logging.DEBUG,
+from pysc import event_stop
+import signal
+import os
+log = os.path.join("d:/log/", 'log.log')
+logging.basicConfig(filename=log, level=logging.DEBUG,
                     format='%(name)s: %(message)s',
                     )
 logger = logging.getLogger('client')
@@ -34,7 +38,17 @@ async def echo(websocket, path):
     finally:
         connected.remove(websocket)
 
-# Start the server
-start_server = websockets.serve(echo, "localhost", PORT)
-asyncio.get_event_loop().run_until_complete(start_server)
-asyncio.get_event_loop().run_forever()
+
+
+if __name__ == '__main__':
+    # Start the server
+    start_server = websockets.serve(echo, "localhost", PORT)
+    loop = asyncio.get_event_loop()
+
+    loop.run_until_complete(start_server)
+    loop.run_forever()
+
+#     @event_stop
+#     def stop():
+#         stop = loop.create_future()
+#         loop.add_signal_handler(signal.SIGTERM, stop.set_result, None)
