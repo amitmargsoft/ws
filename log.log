@@ -1,0 +1,182 @@
+asyncio: Using proactor: IocpProactor
+websockets.server: server listening on [::1]:3003
+websockets.server: server listening on 127.0.0.1:3003
+client: Server on %s:%s3003
+asyncio: Using proactor: IocpProactor
+websockets.server: server listening on 127.0.0.1:3003
+websockets.server: server listening on [::1]:3003
+client: Server on %s:%s3003
+asyncio: Using proactor: IocpProactor
+websockets.server: server listening on 127.0.0.1:3003
+websockets.server: server listening on [::1]:3003
+websockets.server: = connection is CONNECTING
+websockets.server: < GET / HTTP/1.1
+websockets.server: < Host: 127.0.0.1:3003
+websockets.server: < Connection: Upgrade
+websockets.server: < Pragma: no-cache
+websockets.server: < Cache-Control: no-cache
+websockets.server: < User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36
+websockets.server: < Upgrade: websocket
+websockets.server: < Origin: null
+websockets.server: < Sec-WebSocket-Version: 13
+websockets.server: < Accept-Encoding: gzip, deflate, br
+websockets.server: < Accept-Language: en-US,en;q=0.9
+websockets.server: < Sec-WebSocket-Key: IrF0fsEfBoMKVYzm8aRUEg==
+websockets.server: < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+websockets.server: > HTTP/1.1 101 Switching Protocols
+websockets.server: > Upgrade: websocket
+websockets.server: > Connection: Upgrade
+websockets.server: > Sec-WebSocket-Accept: 4iogf+vSo2+gfzAykQmFfqUx8CQ=
+websockets.server: > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+websockets.server: > Date: Wed, 20 Oct 2021 07:58:43 GMT
+websockets.server: > Server: Python/3.9 websockets/10.0
+websockets.server: connection open
+websockets.server: = connection is OPEN
+client: A client just connected
+websockets.server: < TEXT 'My name is John' [15 bytes]
+client: Received message from client: My name is John
+websockets.server: > TEXT 'Someone said: My name is John' [29 bytes]
+websockets.server: < CLOSE 1001 (going away) [2 bytes]
+websockets.server: = connection is CLOSING
+websockets.server: > CLOSE 1001 (going away) [2 bytes]
+websockets.server: x half-closing TCP connection
+websockets.server: = connection is CLOSED
+websockets.server: connection closed
+websockets.server: = connection is CONNECTING
+websockets.server: < GET / HTTP/1.1
+websockets.server: < Host: 127.0.0.1:3003
+websockets.server: < Connection: Upgrade
+websockets.server: < Pragma: no-cache
+websockets.server: < Cache-Control: no-cache
+websockets.server: < User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36
+websockets.server: < Upgrade: websocket
+websockets.server: < Origin: null
+websockets.server: < Sec-WebSocket-Version: 13
+websockets.server: < Accept-Encoding: gzip, deflate, br
+websockets.server: < Accept-Language: en-US,en;q=0.9
+websockets.server: < Sec-WebSocket-Key: MvuyMwrMGokPj+gm/LiEvA==
+websockets.server: < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+websockets.server: > HTTP/1.1 101 Switching Protocols
+websockets.server: > Upgrade: websocket
+websockets.server: > Connection: Upgrade
+websockets.server: > Sec-WebSocket-Accept: dYjVSkd0ORfb3OGfbdjuxvQIAn8=
+websockets.server: > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+websockets.server: > Date: Wed, 20 Oct 2021 07:58:45 GMT
+websockets.server: > Server: Python/3.9 websockets/10.0
+websockets.server: connection open
+websockets.server: = connection is OPEN
+client: A client just connected
+websockets.server: < TEXT 'My name is John' [15 bytes]
+client: Received message from client: My name is John
+websockets.server: > TEXT 'Someone said: My name is John' [29 bytes]
+websockets.server: < TEXT 'sdf' [3 bytes]
+client: Received message from client: sdf
+websockets.server: > TEXT 'Someone said: sdf' [17 bytes]
+websockets.server: %% sending keepalive ping
+websockets.server: > PING 6e 93 33 97 [binary, 4 bytes]
+websockets.server: < PONG 6e 93 33 97 [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: %% sending keepalive ping
+websockets.server: > PING 39 84 b4 bf [binary, 4 bytes]
+websockets.server: < PONG 39 84 b4 bf [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: < TEXT 'a' [1 byte]
+client: Received message from client: a
+websockets.server: > TEXT 'Someone said: a' [15 bytes]
+websockets.server: %% sending keepalive ping
+websockets.server: > PING 0b 26 df 23 [binary, 4 bytes]
+websockets.server: < PONG 0b 26 df 23 [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: < TEXT 'asdf' [4 bytes]
+client: Received message from client: asdf
+websockets.server: > TEXT 'Someone said: asdf' [18 bytes]
+websockets.server: < TEXT '' [0 bytes]
+client: Received message from client: 
+websockets.server: > TEXT 'Someone said: ' [14 bytes]
+websockets.server: < TEXT '' [0 bytes]
+client: Received message from client: 
+websockets.server: > TEXT 'Someone said: ' [14 bytes]
+websockets.server: < TEXT '' [0 bytes]
+client: Received message from client: 
+websockets.server: > TEXT 'Someone said: ' [14 bytes]
+websockets.server: < TEXT '' [0 bytes]
+client: Received message from client: 
+websockets.server: > TEXT 'Someone said: ' [14 bytes]
+websockets.server: < TEXT '' [0 bytes]
+client: Received message from client: 
+websockets.server: > TEXT 'Someone said: ' [14 bytes]
+websockets.server: < TEXT '' [0 bytes]
+client: Received message from client: 
+websockets.server: > TEXT 'Someone said: ' [14 bytes]
+websockets.server: %% sending keepalive ping
+websockets.server: > PING 7a f2 4c a1 [binary, 4 bytes]
+websockets.server: < PONG 7a f2 4c a1 [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: %% sending keepalive ping
+websockets.server: > PING 'R~Lg' [text, 4 bytes]
+websockets.server: < PONG 'R~Lg' [text, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: < TEXT '{"hell":"am"}' [13 bytes]
+client: Received message from client: {"hell":"am"}
+websockets.server: > TEXT 'Someone said: {"hell":"am"}' [27 bytes]
+websockets.server: %% sending keepalive ping
+websockets.server: > PING a8 65 0b 49 [binary, 4 bytes]
+websockets.server: < PONG a8 65 0b 49 [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: %% sending keepalive ping
+websockets.server: > PING f0 2c 17 78 [binary, 4 bytes]
+websockets.server: < PONG f0 2c 17 78 [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: < CLOSE 1001 (going away) [2 bytes]
+websockets.server: = connection is CLOSING
+websockets.server: > CLOSE 1001 (going away) [2 bytes]
+websockets.server: x half-closing TCP connection
+websockets.server: = connection is CLOSED
+websockets.server: connection closed
+websockets.server: = connection is CONNECTING
+websockets.server: < GET / HTTP/1.1
+websockets.server: < Host: 127.0.0.1:3003
+websockets.server: < Connection: Upgrade
+websockets.server: < Pragma: no-cache
+websockets.server: < Cache-Control: no-cache
+websockets.server: < User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36
+websockets.server: < Upgrade: websocket
+websockets.server: < Origin: null
+websockets.server: < Sec-WebSocket-Version: 13
+websockets.server: < Accept-Encoding: gzip, deflate, br
+websockets.server: < Accept-Language: en-US,en;q=0.9
+websockets.server: < Sec-WebSocket-Key: g7WxFrV0xMexnI8sdbcDKg==
+websockets.server: < Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+websockets.server: > HTTP/1.1 101 Switching Protocols
+websockets.server: > Upgrade: websocket
+websockets.server: > Connection: Upgrade
+websockets.server: > Sec-WebSocket-Accept: CvA1PDDWLrxWJUli7EADoqx0+b8=
+websockets.server: > Sec-WebSocket-Extensions: permessage-deflate; server_max_window_bits=12; client_max_window_bits=12
+websockets.server: > Date: Wed, 20 Oct 2021 08:01:25 GMT
+websockets.server: > Server: Python/3.9 websockets/10.0
+websockets.server: connection open
+websockets.server: = connection is OPEN
+client: A client just connected
+websockets.server: < TEXT 'My name is John' [15 bytes]
+client: Received message from client: My name is John
+websockets.server: > TEXT 'Someone said: My name is John' [29 bytes]
+websockets.server: %% sending keepalive ping
+websockets.server: > PING ae c1 e1 01 [binary, 4 bytes]
+websockets.server: < PONG ae c1 e1 01 [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: %% sending keepalive ping
+websockets.server: > PING 38 d9 07 5c [binary, 4 bytes]
+websockets.server: < PONG 38 d9 07 5c [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: %% sending keepalive ping
+websockets.server: > PING 34 45 77 fb [binary, 4 bytes]
+websockets.server: < PONG 34 45 77 fb [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: %% sending keepalive ping
+websockets.server: > PING 96 77 c1 a2 [binary, 4 bytes]
+websockets.server: < PONG 96 77 c1 a2 [binary, 4 bytes]
+websockets.server: %% received keepalive pong
+websockets.server: %% sending keepalive ping
+websockets.server: > PING fe 8b d0 cc [binary, 4 bytes]
+websockets.server: < PONG fe 8b d0 cc [binary, 4 bytes]
+websockets.server: %% received keepalive pong
